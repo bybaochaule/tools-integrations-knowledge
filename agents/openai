@@ -1,1 +1,17 @@
+interface:
+  display_name: "Tools & Integrations Knowledge"
+  short_description: "Plans and validates safe agent tool integrations, API connectors, and action capabilities."
+  default_prompt: "Use the Tools & Integrations Knowledge skill to plan a safe connector or action-enabled workflow."
 
+policy:
+  allow_implicit_invocation: true
+
+dependencies:
+  tools: []
+  files:
+    - SKILL.md
+    - README.md
+    - references/style-guide.md
+    - references/integration-patterns.md
+    - assets/action-plan-template.md
+    - scripts/validate_integration_plan.py
